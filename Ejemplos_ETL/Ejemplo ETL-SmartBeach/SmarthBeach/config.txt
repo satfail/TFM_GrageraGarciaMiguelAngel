@@ -1,0 +1,2 @@
+id;hostplataforma;hostbd;userbd;passwordbd;hostPentaho;userPentaho;passwordPentaho
+ 1;10.162.249.21;10.162.249.20;root;Smart_Badajoz_MySQL_2018;10.162.249.63;root;Mb3Gestion2021

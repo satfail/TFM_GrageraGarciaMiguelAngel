@@ -1,0 +1,1669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="sqlMapSky" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="parking_nPlazas" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="parking_nLibres" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="parking_nOcupadas" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="parkingReservadas" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="parkingSpotData" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="parkingMapData" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlSelectorParking" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlSelector" type="sql.jndi">
+         <Jndi/>
+      </Connection>
+      <Connection id="sqlUltimoCambioEstado" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlMapPeatones" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlActivacionHora" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlGetNowCars" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlGetNowPedestrian" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlGetNowMotobicy" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlGetNowEnergy" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlGetNowHour" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlGetNowActivation" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlOccupationMonth" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlActivationsMonth" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlActivationsMonthTotal" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlCountPasoPeatones" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlGetActivationsLastWeek" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlPlayasMap" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlNIndicadoresPlayas" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlPlayasAforoMes" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlPlayasAforoNow" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlPlayasMaxAforoMes" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlTemperaturaMediaAgua" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlPlayaTHSMediaAmbiente" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlAforoPop" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlWastePop" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlBoyaPop" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlSonometroPop" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlEstacionPop" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlUVMedia" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlMapaGestion" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlAvgTempPrepMesGestion" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlAvgRuidoMesGestion" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlTempPrepWeekGestion" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlRuidoWeekGestion" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlCalidadWeekGestion" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlDataPopGestion" type="sql.jndi">
+         <Jndi>Pentaho_Pro</Jndi>
+      </Connection>
+      <Connection id="sqlMapaInit" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlMapTrafico" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlWidgetTrafico" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlPopTrafico" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlGraficaTrafico" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlMapSonometro" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlAvgMesSonometro" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlAvgMesByIIDSonometro" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlRTSonometro" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlGraficaSonometroProv" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlHeatMapMubaInflux" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlMapMuba" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlPopupMuba" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlAirQ2" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlModifiedTraficaA" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlModifiedParking" type="sql.jndi">
+         <Jndi>CDM_Publico</Jndi>
+      </Connection>
+      <Connection id="sqlMapIncendios" type="sql.jndi">
+         <Jndi>Pentaho_Pro</Jndi>
+      </Connection>
+      <Connection id="sqlPopupIncendios" type="sql.jndi">
+         <Jndi>Pentaho_Pro</Jndi>
+      </Connection>
+      <Connection id="sqlPorcentajeIncendios" type="sql.jndi">
+         <Jndi>Pentaho_Pro</Jndi>
+      </Connection>
+      <Connection id="sqlMaximoIncendios" type="sql.jndi">
+         <Jndi>Pentaho_Pro</Jndi>
+      </Connection>
+      <Connection id="sqlInvBarChart" type="sql.jndi">
+         <Jndi>Pentaho_Pro</Jndi>
+      </Connection>
+      <Connection id="sqlMapRespira" type="sql.jndi">
+         <Jndi>Pentaho_Pro</Jndi>
+      </Connection>
+      <Connection id="sqlWidgetAvgRespira" type="sql.jndi">
+         <Jndi>Pentaho_Pro</Jndi>
+      </Connection>
+      <Connection id="sqlWidgetCountRespira" type="sql.jndi">
+         <Jndi>Pentaho_Pro</Jndi>
+      </Connection>
+      <Connection id="sqlPopRespira" type="sql.jndi">
+         <Jndi>Pentaho_Pro</Jndi>
+      </Connection>
+      <Connection id="sqlForecastChart" type="sql.jndi">
+         <Jndi>Pentaho_Pro</Jndi>
+      </Connection>
+      <Connection id="sqlForecast2" type="sql.jndi">
+         <Jndi>Pentaho_Pro</Jndi>
+      </Connection>
+      <Connection id="sqlPorcentajeIncByEnt" type="sql.jndi">
+         <Jndi>Pentaho_Pro</Jndi>
+      </Connection>
+      <Connection id="sqlPorcentajeResByEnt" type="sql.jndi">
+         <Jndi>Pentaho_Pro</Jndi>
+      </Connection>
+      <Connection id="" type="xpath.xPath">
+         <DataFile/>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="sqlMapSky" id="sqlMapSky" type="sql">
+      <Name>sqlMapSky</Name>
+      <Cache duration="3600" enabled="false"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT name as entityId
+    , powerState
+    , presence
+    , location
+    , address
+    , areaServed
+    , HorizontalRoadSign
+	, VerticalRoadSign
+	, longitude
+    FROM mobCrossWalk_DWD_PasoPeatones
+    ORDER by 2, 1 desc]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="parking_nPlazas" id="parking_nPlazas" type="sql">
+      <Name>parking_nPlazas</Name>
+      <Cache duration="3600" enabled="false"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="parkingName" name="parkingName" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT COUNT(*) from mobOnStreetParkingWellness_DWD_ParkingSpot
+where parking = ${parkingName} ;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="parking_nLibres" id="parking_nLibres" type="sql">
+      <Name>parking_nLibres</Name>
+      <Cache duration="3600" enabled="false"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="parkingName" name="parkingName" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select COUNT(*) 
+from dipbad.mobOnStreetParkingWellness_DWD_ParkingSpot
+where parking = ${parkingName} and (status = 'free');]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="parking_nOcupadas" id="parking_nOcupadas"
+               type="sql">
+      <Name>parking_nOcupadas</Name>
+      <Cache duration="3600" enabled="false"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="parkingName" name="parkingName" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select COUNT(*) 
+from dipbad.mobOnStreetParkingWellness_DWD_ParkingSpot
+where parking = ${parkingName} and not ( status = 'free' );]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="parkingReservadas" id="parkingReservadas"
+               type="sql">
+      <Name>parkingReservadas</Name>
+      <Cache duration="3600" enabled="false"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT COUNT(*)  from dipbad.mobOnStreetParkingWellness_DWD_ParkingSpot
+WHERE description like ('Plaza reservada');]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="parkingSpotData" id="parkingSpotData" type="sql">
+      <Name>parkingSpotData</Name>
+      <Cache duration="3600" enabled="false"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="parkingSpotId" name="parkingSpotId" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select entityId ,status, lastDateUpdate 
+FROM mobOnStreetParkingWellness_DWH_ParkingSpotStatus 
+where entityId = ${parkingSpotId} 
+order by dateUpdated desc limit 1;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="parkingMapData" id="parkingMapData" type="sql">
+      <Name>parkingMapData</Name>
+      <Cache duration="3600" enabled="false"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[select 
+spot.location, 
+spot.nameParking, spot.status, parking.name 
+FROM mobOnStreetParkingWellness_DWD_ParkingSpot spot
+join mobOnStreetParkingWellness_DWH_Parking parking on parking.Id_Parking_sk = spot.Id_Parking_sk 
+WHERE name = "Parking Calle Avelino Palma Brioa"
+order by spot.nameParking desc;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlSelectorParking" id="sqlSelectorParking"
+               type="sql">
+      <Name>sqlSelectorParking</Name>
+      <Cache duration="3600" enabled="false"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[select name from dipbad.mobOnStreetParkingWellness_DWH_Parking]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlSelector" id="sqlSelector" type="sql">
+      <Name>sqlSelector</Name>
+      <Cache duration="3600" enabled="false"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="selectorParam" name="selectorParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT nameParking
+    FROM mobOnStreetParkingWellness_DWD_ParkingSpot
+    where parking = ${selectorParam}
+    ORDER by nameParking asc]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlUltimoCambioEstado" id="sqlUltimoCambioEstado"
+               type="sql">
+      <Name>sqlUltimoCambioEstado</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="parkingSpotId" name="parkingSpotId" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select dateUpdated, DATE_FORMAT(  dateModified  , '%d/%m/%Y  %H:%i:%s') 
+FROM mobOnStreetParkingWellness_DWH_ParkingSpotStatus 
+where entityId = ${parkingSpotId} 
+order by dateUpdated desc limit 1]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlMapPeatones" id="sqlMapPeatones" type="sql">
+      <Name>sqlMapPeatones</Name>
+      <Cache duration="3600" enabled="false"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT name as entityId
+    , powerState
+    , presence
+    , location
+    , address
+    , areaServed
+    , HorizontalRoadSign
+	, VerticalRoadSign
+	, longitude
+    FROM mobCrossWalk_DWD_PasoPeatones
+    ORDER by 2, 1 desc]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlActivacionHora" id="sqlActivacionHora"
+               type="sql">
+      <Name>sqlActivacionHora</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="dateParamEndTR" name="dateParamEndTR" type="String"/>
+         <Parameter default="dateParamStartTR" name="dateParamStartTR" type="String"/>
+         <Parameter default="entityName" name="entityName" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select 
+      entityName, crossWalkActivations as activations ,
+      DATE_FORMAT( DATE_ADD( dateModified , INTERVAL 1 HOUR) , '%d/%m/%Y  %H:%i:%s') as dateModified
+    from 
+      mobCrossWalk_DWH_Transito 
+    where 
+      DATE_FORMAT(dateModified, '%Y%m%d %H:%i') BETWEEN DATE_FORMAT(${dateParamStartTR}, '%Y%m%d %H:%i') and DATE_FORMAT(${dateParamEndTR}, '%Y%m%d %H:%i') 
+      and crossWalkActivations is not null
+      and entityName = ${entityName}
+    group by 
+      entityName, crossWalkActivations;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlGetNowCars" id="sqlGetNowCars" type="sql">
+      <Name>sqlGetNowCars</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="stationParam" name="stationParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[(
+  select 
+    carA.entityName, 
+    lastCarsTwoDirectionsA + lastCarsTwoDirectionsB as activationsCar
+  from 
+    (
+      select  
+          entityName,
+		carsTwoDirectionsA as lastCarsTwoDirectionsA
+		from mobCrossWalk_DWH_Transito mcwdt  
+		where DATE_FORMAT(dateModified,'%Y%m%d')= CURRENT_DATE()
+		and carsTwoDirectionsA is not null 
+		and entityName = ${stationParam}
+		ORDER BY DATE_FORMAT(dateModified, '%Y-%m-%d %H:%i') DESC limit 1
+    ) as carA 
+    join (
+          select 
+          	entityName,
+			carsTwoDirectionsB as lastCarsTwoDirectionsB
+			from mobCrossWalk_DWH_Transito mcwdt  
+			where DATE_FORMAT(dateModified,'%Y%m%d')= CURRENT_DATE()
+			and carsTwoDirectionsB is not null 
+			and entityName = ${stationParam} 
+			ORDER BY DATE_FORMAT(dateModified, '%Y-%m-%d %H:%i') DESC limit 1 
+    ) as carB ON carA.entityName = carB.entityName
+)]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlGetNowPedestrian" id="sqlGetNowPedestrian"
+               type="sql">
+      <Name>sqlGetNowPedestrian</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="stationParam" name="stationParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[(
+  select 
+    pedestrianA.entityName, 
+    lastPedestrianTwoDirectionsA + lastPedestrianTwoDirectionsB as activationPedestrian
+  from 
+    (
+      select 
+          entityName,
+    	pedestrianTwoDirectionsA as lastPedestrianTwoDirectionsA
+		from mobCrossWalk_DWH_Transito mcwdt  
+		where DATE_FORMAT(dateModified,'%Y%m%d')= CURRENT_DATE()
+		and pedestrianTwoDirectionsA is not null 
+		and entityName = ${stationParam} 
+		ORDER BY DATE_FORMAT(dateModified, '%Y-%m-%d %H:%i') DESC limit 1 
+    ) as pedestrianA
+    join (
+          select 
+          	entityName,
+			pedestrianTwoDirectionsB as lastPedestrianTwoDirectionsB
+			from mobCrossWalk_DWH_Transito mcwdt  
+			where DATE_FORMAT(dateModified,'%Y%m%d')= CURRENT_DATE()
+			and pedestrianTwoDirectionsB is not null 
+			and entityName = ${stationParam} 
+			ORDER BY DATE_FORMAT(dateModified, '%Y-%m-%d %H:%i') DESC limit 1 
+    ) as pedestrianB ON pedestrianA.entityName = pedestrianB.entityName
+    
+)]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlGetNowMotobicy" id="sqlGetNowMotobicy"
+               type="sql">
+      <Name>sqlGetNowMotobicy</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="stationParam" name="stationParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[(
+  select 
+    motobicyA.entityName, 
+    lastMotobicyTwoDirectionsA + lastMotobicyTwoDirectionsB as activationMotobicy
+  from 
+    (
+      select 
+          entityName,
+		motobicyTwoDirectionsA as lastMotobicyTwoDirectionsA
+		from mobCrossWalk_DWH_Transito mcwdt  
+		where DATE_FORMAT(dateModified,'%Y%m%d')= CURRENT_DATE()
+		and motobicyTwoDirectionsA is not null 
+		and entityName = ${stationParam} 
+		ORDER BY DATE_FORMAT(dateModified, '%Y-%m-%d %H:%i') DESC limit 1 
+    ) as motobicyA
+    join (
+          select 
+          	entityName,
+			motobicyTwoDirectionsB as lastMotobicyTwoDirectionsB
+			from mobCrossWalk_DWH_Transito mcwdt  
+			where DATE_FORMAT(dateModified,'%Y%m%d')= CURRENT_DATE()
+			and motobicyTwoDirectionsB is not null 
+			and entityName = ${stationParam} 
+			ORDER BY DATE_FORMAT(dateModified, '%Y-%m-%d %H:%i') DESC limit 1 
+    ) as motobicyB ON motobicyB.entityName = motobicyA.entityName   
+)]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlGetNowEnergy" id="sqlGetNowEnergy" type="sql">
+      <Name>sqlGetNowEnergy</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="stationParam2" name="stationParam2" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select
+    consumedEnergy, 
+    DATE_FORMAT( CONVERT_TZ(dateModified,'+00:00',@@global.time_zone)  , '%d/%m/%Y  %H:%i:%s') as dateModified 
+from
+    mobCrossWalk_DWH_Transito
+where
+    entityName = ${stationParam2}
+    and consumedEnergy is not null
+order by
+	DATE_FORMAT(dateModified, '%Y-%m-%d %H:%i') desc
+limit 1;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlGetNowHour" id="sqlGetNowHour" type="sql">
+      <Name>sqlGetNowHour</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="stationParam2" name="stationParam2" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select
+    crossWalkHour
+from
+	mobCrossWalk_DWH_Transito
+where
+	DATE_FORMAT(dateModified, '%Y-%m-%d') = CURRENT_DATE()
+	and entityName = ${stationParam2} and crossWalkHour is not null
+order by DATE_FORMAT(dateModified, '%Y-%m-%d %H:%i') desc limit 1]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlGetNowActivation" id="sqlGetNowActivation"
+               type="sql">
+      <Name>sqlGetNowActivation</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="stationParam2" name="stationParam2" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select
+    crossWalkActivations
+from
+    mobCrossWalk_DWH_Transito
+where
+	DATE_FORMAT(dateModified, '%Y-%m-%d') = CURRENT_DATE()
+	and entityName = ${stationParam2} 
+	and crossWalkActivations is not null
+order by
+	DATE_FORMAT(dateModified, '%Y-%m-%d %H:%i') desc
+limit 1]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlOccupationMonth" id="sqlOccupationMonth"
+               type="sql">
+      <Name>sqlOccupationMonth</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[select ( (sum(parkingPercentageOfOccupation) / count(*))) as porcentageLastMonth
+from dipbad.mobOnStreetParkingWellness_DWH_ParkingOcupacion
+where name = 'Parking Calle Avelino Palma Brioa'
+and YEAR(dateModified) = YEAR(CURRENT_TIMESTAMP)
+and  MONTH(dateModified) = MONTH(DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 1 MONTH) )
+ORDER BY dateModified;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlActivationsMonth" id="sqlActivationsMonth"
+               type="sql">
+      <Name>sqlActivationsMonth</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="stationParam" name="stationParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select entityName, sum(IFNULL(crossWalkActivations,0)) as sumaMonthA, sum(IFNULL(pedestrianTwoDirectionsA,0) + IFNULL(pedestrianTwoDirectionsB, 0)) as sumaMonthB 
+from mobCrossWalk_DWH_Transito mcwdt 
+where entityName = ${stationParam} 
+and YEAR(DATE_SUB(dateModified, INTERVAL 1 MONTH) ) = YEAR(DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 1 MONTH ) )
+and  MONTH(dateModified) = MONTH(DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 1 MONTH) )
+ORDER BY dateModified;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlActivationsMonthTotal"
+               id="sqlActivationsMonthTotal"
+               type="sql">
+      <Name>sqlActivationsMonthTotal</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[select  (sum(IFNULL(crossWalkActivations,0)) + sum(IFNULL(pedestrianTwoDirectionsA,0) + IFNULL(pedestrianTwoDirectionsB, 0))) / DAY(LAST_DAY( DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 1 MONTH) )) as AvgTotalDias
+from mobCrossWalk_DWH_Transito mcwdt 
+WHERE 
+YEAR(DATE_SUB(dateModified, INTERVAL 1 MONTH)) = YEAR(DATE_SUB(now(), INTERVAL 1 MONTH))
+and MONTH(DATE_SUB(dateModified, INTERVAL 1 MONTH)) = MONTH(DATE_SUB(now(), INTERVAL 1 MONTH))
+ORDER BY dateModified;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlCountPasoPeatones" id="sqlCountPasoPeatones"
+               type="sql">
+      <Name>sqlCountPasoPeatones</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[select Count(DISTINCT(entityName)) from mobCrossWalk_DWH_Transito mcwdt]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlGetActivationsLastWeek"
+               id="sqlGetActivationsLastWeek"
+               type="sql">
+      <Name>sqlGetActivationsLastWeek</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="paramUpdatePedChart" name="paramUpdatePedChart" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select DAY(dateModified) as dia,  MONTH(dateModified) as mes, YEAR(dateModified) anyo ,sum(IFNULL(crossWalkActivations,0)) , sum(IFNULL(pedestrianTwoDirectionsA,0) + IFNULL(pedestrianTwoDirectionsB, 0)), entityName 
+from mobCrossWalk_DWH_Transito mcwdt 
+where dateModified BETWEEN DATE_SUB( CURRENT_TIMESTAMP() , INTERVAL 6 DAY) and CURRENT_TIMESTAMP()
+and entityName = ${paramUpdatePedChart}
+GROUP BY dia, mes, anyo
+order by mes, dia,anyo  asc;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlPlayasMap" id="sqlPlayasMap" type="sql">
+      <Name>sqlPlayasMap</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[select location, name, entityId,entityType FROM livSmartBeaches_DWD_Dispositivos order by name desc]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlNIndicadoresPlayas" id="sqlNIndicadoresPlayas"
+               type="sql">
+      <Name>sqlNIndicadoresPlayas</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[select count(*) as sensoresTotal,  
+(select count(*) as sensores FROM livSmartBeaches_DWD_Dispositivos where name = "Playa de Orellana") as sensoresOrellana,
+(select count(*) as sensores FROM livSmartBeaches_DWD_Dispositivos where name = "Playa de Cheles") as sensoresCheles
+FROM livSmartBeaches_DWD_Dispositivos;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlPlayasAforoMes" id="sqlPlayasAforoMes"
+               type="sql">
+      <Name>sqlPlayasAforoMes</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[select
+(select  avg(kpiValue)
+from livSmartBeaches_DWH_CameraInflux device
+join livSmartBeaches_DWD_Area area on area.Id_area_sk = device.Id_area_sk 
+where YEAR(DATE_SUB(device.dateModified, INTERVAL 1 MONTH) ) = YEAR(DATE_SUB(now(), INTERVAL 1 MONTH ) )
+and MONTH(DATE_SUB(device.dateModified, INTERVAL 1 MONTH) ) = MONTH(DATE_SUB(now(), INTERVAL 1 MONTH) )
+and HOUR(device.dateModified) BETWEEN 11 and 20
+and device.name = "Playa de Orellana"
+ORDER BY device.dateModified DESC) as AforoMesOrellana,
+(select  FLOOR( Avg(kpiValue) )
+from livSmartBeaches_DWH_CameraInflux device
+join livSmartBeaches_DWD_Area area on area.Id_area_sk = device.Id_area_sk 
+where YEAR(DATE_SUB(device.dateModified, INTERVAL 1 MONTH) ) = YEAR(DATE_SUB(now(), INTERVAL 1 MONTH ) )
+and MONTH(DATE_SUB(device.dateModified, INTERVAL 1 MONTH) ) = MONTH(DATE_SUB(now(), INTERVAL 1 MONTH) )
+and HOUR(device.dateModified) BETWEEN 11 and 20
+and device.name = "Playa de Cheles"
+ORDER BY device.dateModified DESC) as AforoMesCheles;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlPlayasAforoNow" id="sqlPlayasAforoNow"
+               type="sql">
+      <Name>sqlPlayasAforoNow</Name>
+      <Cache duration="300" enabled="false"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="paramPlaya" name="paramPlaya" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT kpiValue as aforoTiempoReal 
+from livSmartBeaches_DWH_CameraInflux device
+where DATE_FORMAT( dateModified, '%Y-%m-%d') = DATE_FORMAT( CURRENT_TIMESTAMP(), '%Y-%m-%d')
+and device.name = ${paramPlaya}
+order by dateModified asc limit 1;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlPlayasMaxAforoMes" id="sqlPlayasMaxAforoMes"
+               type="sql">
+      <Name>sqlPlayasMaxAforoMes</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="paramPlaya" name="paramPlaya" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT max(kpiValue) 
+from livSmartBeaches_DWH_CameraInflux device
+where YEAR(DATE_SUB(device.dateModified, INTERVAL 1 MONTH) ) = YEAR(DATE_SUB(now(), INTERVAL 1 MONTH ) )
+and  MONTH(DATE_SUB(device.dateModified , INTERVAL 1 MONTH) ) = MONTH(DATE_SUB(now(), INTERVAL 1 MONTH) )
+and device.name = ${paramPlaya}
+order by dateModified;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlTemperaturaMediaAgua"
+               id="sqlTemperaturaMediaAgua"
+               type="sql">
+      <Name>sqlTemperaturaMediaAgua</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="paramPlaya" name="paramPlaya" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select  
+REPLACE(FORMAT(AVG(device.temperature),1), '.', ',')
+from livSmartBeaches_DWH_Device device
+join livSmartBeaches_DWD_Area area on area.Id_area_sk = device.Id_area_sk 
+where DATE_FORMAT( device.dateModified, '%Y-%m-%d') = DATE_FORMAT(CURRENT_TIMESTAMP(), '%Y-%m-%d')
+and area.name = ${paramPlaya};]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlPlayaTHSMediaAmbiente"
+               id="sqlPlayaTHSMediaAmbiente"
+               type="sql">
+      <Name>sqlPlayaTHSMediaAmbiente</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="paramPlaya" name="paramPlaya" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select  
+REPLACE(FORMAT(AVG(device.relativeHumidity),1), '.', ',') as mediaHumedad,REPLACE(FORMAT(AVG(device.temperature),1), '.', ',') as mediaTemperatura,
+REPLACE(FORMAT(AVG(device.solarRadiation),2), '.', ',') as radiacionMedia
+from livSmartBeaches_DWH_WeatherObserved device
+join livSmartBeaches_DWD_Area area on area.Id_area_sk = device.Id_area_sk 
+where DATE_FORMAT( device.dateModified, '%Y-%m-%d') = DATE_FORMAT(CURRENT_TIMESTAMP(), '%Y-%m-%d') 
+and area.name = ${paramPlaya} 
+ORDER BY device.dateModified DESC;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlAforoPop" id="sqlAforoPop" type="sql">
+      <Name>sqlAforoPop</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="paramPlaya" name="paramPlaya" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT CameraInfluxControl, dateModified as fechaModificacion, kpiValue as aforo, nExit, Entry 
+from livSmartBeaches_DWH_CameraInflux device
+where DATE_FORMAT( device.dateModified, '%Y-%m-%d') = DATE_FORMAT(CURRENT_TIMESTAMP(), '%Y-%m-%d') 
+and device.name = ${paramPlaya}
+order by dateModified desc limit 4]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlWastePop" id="sqlWastePop" type="sql">
+      <Name>sqlWastePop</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="WasteContainerParam" name="WasteContainerParam" type="String"/>
+         <Parameter default="paramPlaya" name="paramPlaya" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT fillingLevel,
+storedWasteKind ,
+( SELECT DATE_FORMAT(  dateModified  , '%d/%m/%Y  %H:%i:%s')  FROM livSmartBeaches_DWH_WasteContainer order by dateModified desc limit 1  ) as lastTimeExecuted
+FROM livSmartBeaches_DWH_WasteContainer
+order by dateModified desc limit 1;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlBoyaPop" id="sqlBoyaPop" type="sql">
+      <Name>sqlBoyaPop</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="paramPlaya" name="paramPlaya" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select
+FORMAT(device.temperature,1), device.ph, device.salinity , DATE_FORMAT(  device.dateModified , '%d/%m/%Y  %H:%i:%s')
+from livSmartBeaches_DWH_Device device
+join livSmartBeaches_DWD_Area area on area.Id_area_sk = device.Id_area_sk 
+and area.name = ${paramPlaya} 
+order by device.dateModified desc limit 1]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlSonometroPop" id="sqlSonometroPop" type="sql">
+      <Name>sqlSonometroPop</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="paramPlaya" name="paramPlaya" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select dateModified, Lden, Lday ,Levening ,Lnight , 
+        (select DATE_FORMAT(   device.dateModified , '%d/%m/%Y  %H:%i:%s')
+		from livSmartBeaches_DWH_NoiseLevelObserved device 
+		order by dateModified  desc limit 1
+		) as lastDateUpdated 
+from livSmartBeaches_DWH_NoiseLevelObserved device 
+where dateModified BETWEEN DATE_SUB( CURRENT_TIMESTAMP() , INTERVAL 6 DAY) and CURRENT_TIMESTAMP()
+and name=${paramPlaya}
+and Lden > 0
+order by dateModified desc limit 1;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlEstacionPop" id="sqlEstacionPop" type="sql">
+      <Name>sqlEstacionPop</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="paramPlaya" name="paramPlaya" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select DATE_FORMAT(   device.dateModified , '%d/%m/%Y  %H:%i:%s'),device.temperature, device.relativeHumidity, device.UVIindex 
+from livSmartBeaches_DWH_WeatherObserved device
+join livSmartBeaches_DWD_Area area on area.Id_area_sk = device.Id_area_sk 
+where area.name = ${paramPlaya} 
+ORDER BY device.dateModified DESC limit 1;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlUVMedia" id="sqlUVMedia" type="sql">
+      <Name>sqlUVMedia</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="paramPlaya" name="paramPlaya" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select  IFNULL( 
+REPLACE(FORMAT(AVG(device.UVIindex),2), '.', ',') , 0.00) as radiacionMedia
+from livSmartBeaches_DWH_WeatherObserved device
+join livSmartBeaches_DWD_Area area on area.Id_area_sk = device.Id_area_sk 
+where DATE_FORMAT( device.dateModified, '%Y-%m-%d') = DATE_FORMAT(CURRENT_TIMESTAMP(), '%Y-%m-%d') 
+and area.name = ${paramPlaya} 
+and device.UVIindex > 0
+ORDER BY device.dateModified DESC;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlMapaGestion" id="sqlMapaGestion" type="sql">
+      <Name>sqlMapaGestion</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT D.recvTime fecha
+        , D.description descripcion
+		, D.controlledProperty lista
+		, D.location localizacion
+		, D.batteryLevel bateria
+	FROM dipbad.envEnvironmentWellness_Device_Device D
+    #WHERE D.recvTime > CURRENT_DATE - INTERVAL 30 DAY
+	ORDER BY 1 desc
+	LIMIT 1]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlAvgTempPrepMesGestion"
+               id="sqlAvgTempPrepMesGestion"
+               type="sql">
+      <Name>sqlAvgTempPrepMesGestion</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT  
+    REPLACE(Format(avg(WO.precipitation),2), '.', ','),
+      REPLACE(Format(avg(WO.temperature),2), '.', ',')
+	FROM dipbad.envEnvironmentWellness_WO_WeatherObserved WO
+	WHERE YEAR(DATE_SUB(WO.recvTime, INTERVAL 1 MONTH) ) = YEAR(DATE_SUB(now(), INTERVAL 1 MONTH ) )
+	AND  MONTH(DATE_SUB(WO.recvTime, INTERVAL 1 MONTH) ) = MONTH(DATE_SUB(now(), INTERVAL 1 MONTH) )
+	ORDER BY 1 DESC;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlAvgRuidoMesGestion" id="sqlAvgRuidoMesGestion"
+               type="sql">
+      <Name>sqlAvgRuidoMesGestion</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT 
+    REPLACE(Format(avg(NLO.LAeq),2), '.', ',')
+    FROM dipbad.envEnvironmentWellness_NLO_NoiseLevelObserved NLO
+	WHERE YEAR(DATE_SUB(NLO.recvTime, INTERVAL 1 MONTH) ) = YEAR(DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 1 MONTH ) )
+	AND  MONTH(NLO.recvTime) = MONTH(DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 1 MONTH) )
+	ORDER BY 1 desc]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlTempPrepWeekGestion" id="sqlTempPrepWeekGestion"
+               type="sql">
+      <Name>sqlTempPrepWeekGestion</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="updateInitWidgets" name="updateInitWidgets" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT  day(WO.recvTime) as dia, MONTH(WO.recvTime) as mes, YEAR(WO.recvTime) as anyo, 
+    	 REPLACE(Format(avg(WO.precipitation),2), '.', ','),
+		 REPLACE(Format(avg(WO.temperature),2), '.', ',')
+	FROM dipbad.envEnvironmentWellness_WO_WeatherObserved WO
+	WHERE WO.recvTime > CURRENT_DATE - INTERVAL 6 DAY
+	GROUP BY dia, mes, anyo
+	ORDER BY 1 asc;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlRuidoWeekGestion" id="sqlRuidoWeekGestion"
+               type="sql">
+      <Name>sqlRuidoWeekGestion</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT  day(NLO.recvTime) as dia, MONTH(NLO.recvTime) as mes, YEAR(NLO.recvTime) as anyo, 
+    	 REPLACE(Format(avg(NLO.LAeq),2), '.', ',')
+	FROM dipbad.envEnvironmentWellness_NLO_NoiseLevelObserved NLO
+	WHERE NLO.recvTime > CURRENT_DATE - INTERVAL 6 DAY
+	GROUP BY dia, mes, anyo
+	ORDER BY 1 asc;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlCalidadWeekGestion" id="sqlCalidadWeekGestion"
+               type="sql">
+      <Name>sqlCalidadWeekGestion</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT  day(PMO.recvTime) as dia, MONTH(PMO.recvTime) as mes, YEAR(PMO.recvTime) as anyo
+        , REPLACE(Format(avg(PMO.PM1),2), '.', ',') as PM1
+    	, REPLACE(Format(avg(PMO.PM10),2), '.', ',') as PM10
+		, REPLACE(Format(avg(PMO.PM25),2), '.', ',') as PM25
+	FROM dipbad.envEnvironmentWellness_PMO_ParticleMatterObserved PMO
+    WHERE PMO.recvTime > CURRENT_DATE - INTERVAL 6 DAY
+	GROUP BY dia, mes, anyo
+	ORDER BY 1 asc]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlDataPopGestion" id="sqlDataPopGestion"
+               type="sql">
+      <Name>sqlDataPopGestion</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT  recvTime , REPLACE(Format(temperature,2), '.', ',') as temperatura, REPLACE(Format(heatIndex,2), '.', ',') as sensacionTermica,
+    REPLACE(Format(precipitation,2), '.', ',') as precipitacion,  REPLACE(Format(relativeHumidity,2), '.', ',')as humedadRelativa ,
+    REPLACE(Format(atmosphericPressure,2), '.', ',') as presionAtmosferica, REPLACE(Format(windSpeed,2), '.', ',') as velocidadViento,
+    REPLACE(Format(uv,2), '.', ',') as uv
+	FROM envEnvironmentWellness_WO_WeatherObserved eewwwo 
+	ORDER BY 1 desc
+	LIMIT 1;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlMapaInit" id="sqlMapaInit" type="sql">
+      <Name>sqlMapaInit</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[(
+SELECT case 
+        when  SubStr(name, 1, 7)  = 'BADAJOZ' then 'Paso de Peatones' 
+        when  SubStr(name, 1, 7)  = 'SMART_C' then 'Paso de Peatones_Smart' 
+		end as vertical
+    , location
+    FROM mobCrossWalk_DWD_PasoPeatones
+    group by areaServed
+)
+ UNION
+(
+SELECT
+case 
+		when  SubStr(parking.name, 1, 7)  = 'Parking' then 'Parking' end as vertical,
+spot.location
+FROM mobOnStreetParkingWellness_DWD_ParkingSpot spot
+join mobOnStreetParkingWellness_DWH_Parking parking on parking.Id_Parking_sk = spot.Id_Parking_sk 
+WHERE name = "Parking Calle Avelino Palma Brioa"
+group by name
+)
+UNION 
+(
+select name as vertical, location 
+FROM livSmartBeaches_DWD_Dispositivos
+group by name
+)
+UNION 
+(
+SELECT
+         case 
+         when SubStr( D.description , 1, 9) = 'SmartSpot' then 'Gestion Medioambiental' end as vertical,
+	     D.location localizacion
+	FROM dipbad.envEnvironmentWellness_Device_Device D
+	LIMIT 1 
+)
+UNION
+(
+SELECT  CONCAT( 'Trafico ',laneDirection )as vertical , location 
+FROM mobTrafficU_DWH_speed_agg mtudsa
+GROUP BY laneDirection
+)
+UNION 
+(
+SELECT case 
+	when SubStr(entityID, 19, 25) = '3546' then 'Sonómetro Villafranca de los Barros'
+	when SubStr(entityID, 19, 25) = '3549' then 'Sonómetro Calamonte'
+	when SubStr(entityID, 19, 25) = '3551' then 'Sonómetro Zafra'
+	when SubStr(entityID, 19, 25) = '3789' then 'Sonómetro Campanario'
+	when SubStr(entityID, 19, 25) = '3790' then 'Sonómetro Santa Marta'
+	when SubStr(entityID, 19, 25) = '3852' then 'Sonómetro Talavera la Real' end as vertical,
+	location 
+from envEnvironmentProv_NLO_NoiseLevelObserved eepnnlo
+WHERE entityID not LIKE 'BADAJOZ_PEAK10_PL-3550'
+group by entityID
+)
+UNION 
+(
+SELECT 'Muba' as vertical, location from peoARVR_DWH_InfluxControlDevice padicd 
+group by address
+)]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlMapTrafico" id="sqlMapTrafico" type="sql">
+      <Name>sqlMapTrafico</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT  laneDirection , location 
+FROM mobTrafficU_DWH_speed_agg mtudsa
+GROUP BY laneDirection]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlWidgetTrafico" id="sqlWidgetTrafico" type="sql">
+      <Name>sqlWidgetTrafico</Name>
+      <Cache duration="1800" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[(SELECT  
+		MONTHNAME(STR_TO_DATE(MONTH(dateModifiedKpi), '%m' ) ) as month_name, 
+		YEAR(dateModifiedKpi),
+		laneDirection,
+		'velocidad' as vehicleType,
+		REPLACE(FORMAT( AVG( avg_speed ) , 3) , '.', ',') as agg_avg,
+		ROUND(sum(nCarsByDir) / DAY(LAST_DAY(DATE_SUB(now(),  INTERVAL 1 MONTH)))) as avgNcars
+	FROM mobTrafficU_DWH_speed_agg mtudsa 
+	WHERE 
+		MONTH(dateModifiedKpi) =MONTH(DATE_SUB(now(),  INTERVAL 1 MONTH))
+		AND YEAR(dateModifiedKpi) = YEAR(DATE_SUB(now(),  INTERVAL 1 MONTH))
+	GROUP BY
+		MONTHNAME(STR_TO_DATE(MONTH(dateModifiedKpi), '%m' ) ), 
+		YEAR(dateModifiedKpi)
+	)
+UNION
+	(SELECT 
+		MONTHNAME(STR_TO_DATE(MONTH(dateModifiedKpi), '%m' ) ) as month_name, 
+		YEAR(dateModifiedKpi),
+		laneDirection,
+		CASE WHEN vehicleType = 'car' THEN 'ligero'
+			 WHEN vehicleType = 'motorbike' THEN 'ligero'
+			 WHEN vehicleType = 'truck' then 'pesado'
+			 ELSE vehicleType end as vehicleType ,
+		FORMAT(avg(mtudsa.size),3) as agg_avg,
+		ROUND(sum(nCarsByDirType) / DAY(LAST_DAY(DATE_SUB(now(),  INTERVAL 1 MONTH)))) as avgNcars
+	FROM mobTrafficU_DWH_size_agg mtudsa 
+	WHERE 
+		MONTH(dateModifiedKpi) = MONTH(DATE_SUB(now(),  INTERVAL 1 MONTH))
+		AND YEAR(dateModifiedKpi) = YEAR(DATE_SUB(now(),  INTERVAL 1 MONTH))
+	GROUP BY
+		MONTHNAME(STR_TO_DATE(MONTH(dateModifiedKpi), '%m' ) ), 
+		YEAR(dateModifiedKpi),
+		CASE WHEN vehicleType = 'car' THEN 'ligero'
+			 WHEN vehicleType = 'motorbike' THEN 'ligero'
+			 WHEN vehicleType = 'truck' then 'pesado'
+			 ELSE vehicleType end
+	)
+UNION 
+	(SELECT 
+		MONTHNAME(STR_TO_DATE(MONTH(dateModifiedKpi), '%m' ) ) as month_name, 
+		YEAR(dateModifiedKpi),
+		laneDirection,
+		'Total',
+		FORMAT(avg(mtudsa.size),3) as agg_avg,
+		ROUND(sum(nCarsByDirType) /  DAY(LAST_DAY(DATE_SUB(now(),  INTERVAL 1 MONTH)))) as avgNcars
+	FROM mobTrafficU_DWH_size_agg mtudsa 
+	WHERE 
+		MONTH(dateModifiedKpi) = MONTH(DATE_SUB(now(),  INTERVAL 1 MONTH))
+		AND YEAR(dateModifiedKpi) = YEAR(DATE_SUB(now(),  INTERVAL 1 MONTH))
+	);]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlPopTrafico" id="sqlPopTrafico" type="sql">
+      <Name>sqlPopTrafico</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[(SELECT dateModifiedKpi, 
+        	laneDirection,
+			'mediaTotal' as keyVal,
+			sum(nCarsByDirType) as value,
+			(select DATE_FORMAT( DATE_SUB( ( device.dateModified) , INTERVAL 4 minute), '%d/%m/%Y  %H:%i:%s')
+				from livSmartBeaches_DWH_NoiseLevelObserved device 
+				order by dateModified  desc limit 1
+				) as lastDateUpdated 
+	FROM mobTrafficU_DWH_size_agg mtudsa
+	WHERE dateModifiedKpi = DATE_FORMAT(now(), '%Y-%m-%d')
+	GROUP BY laneDirection)
+UNION 
+	(SELECT 
+		dateModifiedKpi, 
+		laneDirection,
+		CASE WHEN vehicleType = 'car' THEN 'ligero'
+			 WHEN vehicleType = 'motorbike' THEN 'ligero'
+			 WHEN vehicleType = 'truck' then 'pesado'
+			 ELSE vehicleType end as keyVal ,
+		sum(nCarsByDirType) as value,
+		(select DATE_FORMAT( DATE_SUB( ( device.dateModified) , INTERVAL 4 minute), '%d/%m/%Y  %H:%i:%s')
+			from livSmartBeaches_DWH_NoiseLevelObserved device 
+			order by dateModified  desc limit 1
+			) as lastDateUpdated 
+FROM mobTrafficU_DWH_size_agg mtudsa 
+	WHERE dateModifiedKpi = DATE_FORMAT(now(), '%Y-%m-%d')
+	GROUP BY
+		MONTHNAME(STR_TO_DATE(MONTH(dateModifiedKpi), '%m' ) ), 
+		YEAR(dateModifiedKpi),
+		laneDirection,
+		CASE WHEN vehicleType = 'car' THEN 'ligero'
+			 WHEN vehicleType = 'motorbike' THEN 'ligero'
+			 WHEN vehicleType = 'truck' then 'pesado'
+			 ELSE vehicleType end
+	)
+UNION 
+	(
+	SELECT 
+		dateModifiedKpi ,
+		laneDirection ,
+		'velocidad' as keyVal,
+		REPLACE(avg_speed, '.', ',') as value,
+					(select DATE_FORMAT( DATE_SUB( ( device.dateModified) , INTERVAL 4 minute), '%d/%m/%Y  %H:%i:%s')
+				from livSmartBeaches_DWH_NoiseLevelObserved device 
+				order by dateModified  desc limit 1
+				) as lastDateUpdated 
+	FROM mobTrafficU_DWH_speed_agg mtudsa 
+	WHERE dateModifiedKpi = DATE_FORMAT(now(), '%Y-%m-%d')	
+	)
+ORDER BY laneDirection asc, keyval asc;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlGraficaTrafico" id="sqlGraficaTrafico"
+               type="sql">
+      <Name>sqlGraficaTrafico</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT dateModifiedKpi, laneDirection ,
+        CASE WHEN vehicleType = 'car' THEN 'ligero'
+			 WHEN vehicleType = 'motorbike' THEN 'ligero'
+			 WHEN vehicleType = 'truck' then 'pesado'
+			 ELSE vehicleType end as vehicleType ,
+		nCarsByDirType
+FROM mobTrafficU_DWH_size_agg mtudsa
+WHERE dateModifiedKpi BETWEEN DATE_SUB(now() , INTERVAL 7 DAY) and DATE_FORMAT(now(),'%Y-%m-%d')
+GROUP BY dateModifiedKpi, laneDirection ,
+		CASE WHEN vehicleType = 'car' THEN 'ligero'
+			 WHEN vehicleType = 'motorbike' THEN 'ligero'
+			 WHEN vehicleType = 'truck' then 'pesado'
+			 ELSE vehicleType end ;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlMapSonometro" id="sqlMapSonometro" type="sql">
+      <Name>sqlMapSonometro</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT entityID, address,location from envEnvironmentProv_NLO_NoiseLevelObserved eepnnlo
+WHERE entityID not LIKE 'BADAJOZ_PEAK10_PL-3550'
+group by entityID;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlAvgMesSonometro" id="sqlAvgMesSonometro"
+               type="sql">
+      <Name>sqlAvgMesSonometro</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT         
+    	MONTHNAME(STR_TO_DATE(MONTH(dateModified), '%m' ) ) as month_name, 
+		YEAR(dateModified) as year_desc,
+		entityID, address, 
+		FLOOR(avg(Lday)) as avgLday,
+		FLOOR(avg(Lden)) as avgLden,
+		FLOOR(avg(Levening)) as avgLevening,
+		FLOOR(avg(Lnight)) as avgLnight
+FROM envEnvironmentProv_NLO_NoiseLevelObserved eepnnlo
+WHERE MONTH(dateModified) =MONTH(now())
+		AND YEAR(dateModified) = YEAR(DATE_SUB(now(),  INTERVAL 1 MONTH))
+		and Lday  > 0
+		and Lden > 0 
+		and Levening > 0 
+		and Lnight > 0
+		AND entityID NOT LIKE 'BADAJOZ_PEAK10_PL-3550';]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlAvgMesByIIDSonometro"
+               id="sqlAvgMesByIIDSonometro"
+               type="sql">
+      <Name>sqlAvgMesByIIDSonometro</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="paramNoiseID" name="paramNoiseID" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT         
+    	MONTHNAME(STR_TO_DATE(MONTH(dateModified), '%m' ) ) as month_name, 
+		YEAR(dateModified),
+		entityID, address, 
+		FLOOR(avg(Lday)) as avgLday,
+		FLOOR(avg(Lden)) as avgLden,
+		FLOOR(avg(Levening)) as avgLevening,
+		FLOOR(avg(Lnight)) as avgLnight
+from envEnvironmentProv_NLO_NoiseLevelObserved eepnnlo
+WHERE MONTH(dateModified) =MONTH(now())
+		AND YEAR(dateModified) = YEAR(now())
+		and Lday  > 0
+		and Lden > 0 
+		and Levening > 0 
+		and Lnight > 0
+		and entityID  = ${paramNoiseID};]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlRTSonometro" id="sqlRTSonometro" type="sql">
+      <Name>sqlRTSonometro</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="paramNoiseID" name="paramNoiseID" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT entityID, address, 
+       LAeq_1, LAeq_10, LAeq_60,
+       (SELECT DATE_FORMAT(   max(CONVERT_TZ(dateModified,'+00:00',@@global.time_zone)) , '%d/%m/%Y  %H:%i:%s')
+        FROM envEnvironmentWellness_NLO_NoiseLevelObserved 
+        order by 1 desc limit 1) 
+FROM envEnvironmentProv_NLO_DWH_RT eepndr 
+WHERE entityID  = ${paramNoiseID};]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlGraficaSonometroProv"
+               id="sqlGraficaSonometroProv"
+               type="sql">
+      <Name>sqlGraficaSonometroProv</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="paramNoiseID" name="paramNoiseID" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT    
+		DATE_FORMAT(dateModified , '%Y-%m-%d' ) as dateModified,
+		day(dateModified) as numDay,
+		DAYNAME(dateModified) as descDay,
+		entityID,
+		address,
+		FLOOR(avg(Lday)) as avgLday,
+		FLOOR(avg(Lden)) as avgLden,
+		FLOOR(avg(Levening)) as avgLevening,
+		FLOOR(avg(Lnight)) as avgLnight
+FROM envEnvironmentProv_NLO_NoiseLevelObserved eepnnlo
+WHERE dateModified BETWEEN DATE_SUB(now() , INTERVAL 7 DAY) and DATE_FORMAT(now(),'%Y-%m-%d')
+and entityID  = ${paramNoiseID}
+group by DAYNAME(dateModified)
+order by DATE_FORMAT(dateModified , '%Y-%m-%d' ) ;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlHeatMapMubaInflux" id="sqlHeatMapMubaInflux"
+               type="sql">
+      <Name>sqlHeatMapMubaInflux</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT CONVERT (DAY (fecha_id) , CHAR)  as dayMod , max(a11.kpiValue) 
+from mobCrossWalk_DWD_Tiempo mcwdt 
+left join    peoARVR_DWH_InfluxControlDevice a11
+	  on 	(DATE_FORMAT(fecha_id ,'%Y-%m-%d' ) = DATE_FORMAT(a11.dateModified,'%Y-%m-%d' ))
+WHERE YEAR (fecha_id) = year(now())
+group by  DAY (fecha_id), MONTH(fecha_id), year(fecha_id)
+order by  MONTH(fecha_id),DAY (fecha_id);]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlMapMuba" id="sqlMapMuba" type="sql">
+      <Name>sqlMapMuba</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT address, location from peoARVR_DWH_InfluxControlDevice padicd 
+group by address;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlPopupMuba" id="sqlPopupMuba" type="sql">
+      <Name>sqlPopupMuba</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="paramMubaId" name="paramMubaId" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT DATE_FORMAT(dateModified,'%Y-%m-%d %H:%i') as dateModified,
+address,Entry, nExit, kpiValue,
+DATE_FORMAT(   dateModified, '%d/%m/%Y  %H:%i:%s')
+from peoARVR_DWH_InfluxControlDevice padicd
+where entityId = ${paramMubaId}
+order by DATE_FORMAT(dateModified,'%Y-%m-%d %H:%i') desc limit 1;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlAirQ2" id="sqlAirQ2" type="sql">
+      <Name>sqlAirQ2</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT DATE_FORMAT(dateModified,'%Y-%m-%d') as dayModified,
+     REPLACE(Format(avg(H2S),2), '.', ',') as H2S ,
+  	REPLACE(Format(avg(`NO`),2), '.', ',') as NOx , 
+	REPLACE(Format(avg(NO2),2), '.', ',') as NO2 , 
+	REPLACE(Format(avg(O3),2), '.', ',') as O3 , 
+	REPLACE(Format(avg(SO2),2), '.', ',') as SO2
+from envEnvironmentWellness_AQO_AirQualityObserved eewaaqo
+WHERE dateModified BETWEEN DATE_SUB(now() , INTERVAL 7 DAY) and DATE_FORMAT(now(),'%Y-%m-%d')
+group by DATE_FORMAT(dateModified,'%Y-%m-%d') 
+order by 1 asc;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlModifiedTraficaA" id="sqlModifiedTraficaA"
+               type="sql">
+      <Name>sqlModifiedTraficaA</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="dateParamStartTR" name="dateParamStartTR" type="String"/>
+         <Parameter default="dateParamEndTR" name="dateParamEndTR" type="String"/>
+         <Parameter default="entityName" name="entityName" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT
+    DATE_FORMAT(  dateModified  , '%d/%m/%Y  %H:%i:%s')
+  from 
+    mobCrossWalk_DWH_Transito 
+    WHERE entityName = ${entityName}
+   order by dateModified  desc limit 1;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlModifiedParking" id="sqlModifiedParking"
+               type="sql">
+      <Name>sqlModifiedParking</Name>
+      <Cache duration="3600" enabled="false"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT DATE_FORMAT( CONVERT_TZ(dateModified,'+00:00',@@global.time_zone)  , '%d/%m/%Y  %H:%i:%s') 
+from mobOnStreetParkingWellness_DWH_ParkingSpotStatus mospwdpss 
+order by dateModified desc limit 1;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlMapIncendios" id="sqlMapIncendios" type="sql">
+      <Name>sqlMapIncendios</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT dateModified ,entityId ,
+location ,
+categorical_predicted,
+    CASE
+    	WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4464X' THEN 'Alburquerque'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4468X' THEN 'Puebla de Obando'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4358X' THEN 'Don Benito'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4340' THEN 'Novalvillar de Pela'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4244X' THEN 'Herrera del Duque'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4478X' THEN 'Badajoz'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4410X' THEN 'Mérida'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4486X' THEN 'Olivenza'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4436Y' THEN 'Almendralejo'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4325X' THEN 'Castuera'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4395X' THEN 'Villafranca de los Barros'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4260' THEN 'Peraleda del Zaucejo'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4489X' THEN 'Cheles'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4492F' THEN 'Embalse del Aguijón'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4427X' THEN 'Zafra'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4497X' THEN 'Villanueva del Fresno'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4511C' THEN 'Jerez de los Caballeros'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4520X' THEN 'Fregenal de la Sierra'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4501X' THEN 'Fuente de Cantos'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4386B' THEN 'Llerena'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_5473X' THEN 'Azuaga'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4499X' THEN 'Monesterio'
+		end as name
+from EAQR_pmi_FirePrediction epfp ;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlPopupIncendios" id="sqlPopupIncendios"
+               type="sql">
+      <Name>sqlPopupIncendios</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="entityId" name="entityId" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT entityId ,
+DATE_FORMAT(  dateModified, '%Y/%m/%d %H:%i:%s') ,
+humidity ,
+temperature ,
+windSpeed ,
+sumcumDaysPrep ,
+categorical_predicted,
+    CASE
+        WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4464X' THEN 'Alburquerque'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4468X' THEN 'Puebla de Obando'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4358X' THEN 'Don Benito'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4340' THEN 'Novalvillar de Pela'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4244X' THEN 'Herrera del Duque'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4478X' THEN 'Badajoz'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4410X' THEN 'Mérida'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4486X' THEN 'Olivenza'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4436Y' THEN 'Almendralejo'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4325X' THEN 'Castuera'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4395X' THEN 'Villafranca de los Barros'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4260' THEN 'Peraleda del Zaucejo'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4489X' THEN 'Cheles'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4492F' THEN 'Embalse del Aguijón'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4427X' THEN 'Zafra'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4497X' THEN 'Villanueva del Fresno'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4511C' THEN 'Jerez de los Caballeros'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4520X' THEN 'Fregenal de la Sierra'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4501X' THEN 'Fuente de Cantos'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4386B' THEN 'Llerena'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_5473X' THEN 'Azuaga'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4499X' THEN 'Monesterio'
+		end as name
+from EAQR_pmi_FirePrediction epfp 
+where entityId like ${entityId}
+order by 2 desc;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlPorcentajeIncendios" id="sqlPorcentajeIncendios"
+               type="sql">
+      <Name>sqlPorcentajeIncendios</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT  categorical_predicted ,ROUND( ( (100 * count(*) ) / (SELECT COUNT(*) from EAQR_pmi_dwh_FirePrediction epdfp ) ) , 2 )  as avgTotal 
+from EAQR_pmi_dwh_FirePrediction epdfp 
+group by  categorical_predicted 
+order by 2 desc;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlMaximoIncendios" id="sqlMaximoIncendios"
+               type="sql">
+      <Name>sqlMaximoIncendios</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT categorical_predicted ,count(*)   
+from EAQR_pmi_FirePrediction epfp 
+group by  categorical_predicted 
+order by 1,2;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlInvBarChart" id="sqlInvBarChart" type="sql">
+      <Name>sqlInvBarChart</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT entityId , categorical_predicted , count(*),
+    CASE
+    	WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4464X' THEN 'Alburquerque'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4468X' THEN 'Puebla de Obando'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4358X' THEN 'Don Benito'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4340' THEN 'Novalvillar de Pela'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4244X' THEN 'Herrera del Duque'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4478X' THEN 'Badajoz'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4410X' THEN 'Mérida'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4486X' THEN 'Olivenza'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4436Y' THEN 'Almendralejo'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4325X' THEN 'Castuera'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4395X' THEN 'Villafranca de los Barros'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4260' THEN 'Peraleda del Zaucejo'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4489X' THEN 'Cheles'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4492F' THEN 'Embalse del Aguijón'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4427X' THEN 'Zafra'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4497X' THEN 'Villanueva del Fresno'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4511C' THEN 'Jerez de los Caballeros'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4520X' THEN 'Fregenal de la Sierra'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4501X' THEN 'Fuente de Cantos'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4386B' THEN 'Llerena'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_5473X' THEN 'Azuaga'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4499X' THEN 'Monesterio'
+		end as name
+from EAQR_pmi_dwh_FirePrediction epdfp 
+group by entityId , categorical_predicted, name 
+order by 1,2;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlMapRespira" id="sqlMapRespira" type="sql">
+      <Name>sqlMapRespira</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT 
+   DISTINCT erap.entityId ,
+    erap.location,
+    erap.airQualityIndex_predicted,
+    (
+        CASE
+    		WHEN airQualityIndex_predicted < 25 then 'Excelente' 
+			WHEN airQualityIndex_predicted >= 25 and airQualityIndex_predicted < 50 then 'Bueno'
+			WHEN airQualityIndex_predicted >= 50 and airQualityIndex_predicted < 75 then 'Ligeramente contaminado'
+			WHEN airQualityIndex_predicted >= 75 and airQualityIndex_predicted < 100 then ' Moderadamente contaminado'
+			WHEN airQualityIndex_predicted > 100 then 'Muy contaminado'
+		end
+	) as nominal_aqi,
+	er.description 
+from EAQR__R_AQI_PREDICT erap
+left join EAQR__R er 
+	on er.entityId = erap.entityId 
+where erap.entityId not LIKE '%RESPIRA_A4CF12756744'
+and  erap.entityId not LIKE '%RESPIRA_A4CF1275554C'
+and erap.entityId not LIKE 'RESPIRA:RESPIRA_A4CF1275143C';]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlWidgetAvgRespira" id="sqlWidgetAvgRespira"
+               type="sql">
+      <Name>sqlWidgetAvgRespira</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT 
+    (
+        CASE
+            WHEN airQualityIndex_predicted < 25 then 'Excelente' 
+    		WHEN airQualityIndex_predicted >= 25 and airQualityIndex_predicted < 50 then 'Bueno'
+			WHEN airQualityIndex_predicted >= 50 and airQualityIndex_predicted < 75 then 'Polución Ligera'
+			WHEN airQualityIndex_predicted >= 75 and airQualityIndex_predicted < 100 then 'Polución Moderada'
+			WHEN airQualityIndex_predicted > 100 then 'Polución Grave'
+		end
+	) as nominal_aqi,
+	ROUND( ( (100 * count(*) ) )) / 
+									(SELECT count(1) from EAQR__R_AQI_PREDICT erap where entityId not LIKE '%RESPIRA_A4CF12756744'
+										and  entityId not LIKE '%RESPIRA_A4CF1275554C'
+										and entityId not LIKE 'RESPIRA:RESPIRA_A4CF1275143C') as avgTotal
+from EAQR__R_AQI_PREDICT erap 
+where entityId not LIKE '%RESPIRA_A4CF12756744'
+and  entityId not LIKE '%RESPIRA_A4CF1275554C'
+and entityId not LIKE 'RESPIRA:RESPIRA_A4CF1275143C'
+group by nominal_aqi
+order by 2 desc, 1 asc;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlWidgetCountRespira" id="sqlWidgetCountRespira"
+               type="sql">
+      <Name>sqlWidgetCountRespira</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT 
+    (
+        CASE
+    		WHEN airQualityIndex_predicted < 25 then 'Excelente' 
+			WHEN airQualityIndex_predicted >= 25 and airQualityIndex_predicted < 50 then 'Bueno'
+			WHEN airQualityIndex_predicted >= 50 and airQualityIndex_predicted < 75 then 'Ligeramente contaminado'
+			WHEN airQualityIndex_predicted >= 75 and airQualityIndex_predicted < 100 then ' Moderadamente contaminado'
+			WHEN airQualityIndex_predicted > 100 then 'Muy contaminado'
+		end
+	) as nominal_aqi,
+	max(airQualityIndex_predicted ) as maxAQI,
+	count(*) * 100 / (SELECT count(*) 
+						from EAQR__R_AQI_PREDICT erap
+						where entityId not LIKE '%RESPIRA_A4CF12756744'
+						and  entityId not LIKE '%RESPIRA_A4CF1275554C'
+						and entityId not LIKE 'RESPIRA:RESPIRA_A4CF1275143C') as porcentaje 
+from EAQR__R_AQI_PREDICT erap
+where entityId not LIKE '%RESPIRA_A4CF12756744'
+and  entityId not LIKE '%RESPIRA_A4CF1275554C'
+and entityId not LIKE 'RESPIRA:RESPIRA_A4CF1275143C'
+group by nominal_aqi
+order by 2 asc;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlPopRespira" id="sqlPopRespira" type="sql">
+      <Name>sqlPopRespira</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="entityRespira" name="entityRespira" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT 
+    erap.entityId ,
+    DATE_FORMAT( erap.dateModified, '%Y/%m/%d %H:%i:%s') as dateModified ,
+    erap.NO2 ,
+	erap.`PM1.0` ,
+	erap.PM10 ,
+	erap.`PM2.5` ,
+	erap.`PM4.0` ,
+    	CASE 
+        	WHEN FLOOR(  erap.airQualityIndex_predicted)  < 0 THEN 0
+    		ELSE FLOOR(  erap.airQualityIndex_predicted) end  as airQualityIndex_predicted ,
+    (
+        CASE
+    		WHEN airQualityIndex_predicted < 25 then 'Excelente' 
+			WHEN airQualityIndex_predicted >= 25 and airQualityIndex_predicted < 50 then 'Bueno'
+			WHEN airQualityIndex_predicted >= 50 and airQualityIndex_predicted < 75 then 'Polución Ligera'
+			WHEN airQualityIndex_predicted >= 75 and airQualityIndex_predicted < 100 then 'Polución Moderada'
+			WHEN airQualityIndex_predicted > 100 then 'Polución Grave'
+		end
+	) as nominal_aqi,
+	er.description 
+from EAQR__R_AQI_PREDICT erap
+left join EAQR__R er 
+	on er.entityId = erap.entityId 
+where erap.entityId = ${entityRespira};]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlForecastChart" id="sqlForecastChart" type="sql">
+      <Name>sqlForecastChart</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="entityRespira" name="entityRespira" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT erap.entityId ,
+       DATE_FORMAT( erap.recvTime , '%Y/%m/%d %H:%i') recvTime2 ,
+       ROUND( avg(erap.predicted_mean),2),
+       er.description 
+FROM EAQR_pmi_dwh_AQForecast erap
+left join EAQR__R er 
+    on er.entityId = erap.entityId
+where erap.entityId = ${entityRespira}
+and erap.recvTime is not null
+and erap.recvTime > now()
+GROUP BY erap.entityId , recvTime2, er.description  
+order by 2 desc, 1 desc limit 24;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlForecast2" id="sqlForecast2" type="sql">
+      <Name>sqlForecast2</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="entityRespira" name="entityRespira" type="String"/>
+      </Parameters>
+      <Query><![CDATA[(SELECT erap.entityId as entityId ,
+           DATE_FORMAT( erap.recvTime , '%Y/%m/%d %H:%i') dateModified ,
+           ROUND( avg(erap.predicted_mean),2) as airQualityIndex,
+           er.description as description,
+	       'Forecast' as nameType
+	FROM EAQR_pmi_dwh_AQForecast erap
+	left join (SELECT entityId ,description 
+					from EAQR__R er
+					group by entityId , description ) as er
+	    on er.entityId = erap.entityId
+	where erap.entityId = ${entityRespira}
+	and erap.recvTime is not null
+	GROUP BY erap.entityId , DATE_FORMAT( erap.recvTime , '%Y/%m/%d %H:%i'), er.description  
+	order by 2 desc limit 31)
+UNION
+	(SELECT 
+		entityId,
+		DATE_FORMAT( dateModified , '%Y/%m/%d %H:00') dateModified ,
+		ROUND( avg(airQualityIndex),2) as airQualityIndex,
+		description as description,
+		'Respira' as nameType
+	from EAQR__R er2
+	where entityId = ${entityRespira} 
+	group by entityId, DATE_FORMAT( dateModified , '%Y/%m/%d %H:00'), description 
+	order by 2 desc limit 8)
+order by 2 asc;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlPorcentajeIncByEnt" id="sqlPorcentajeIncByEnt"
+               type="sql">
+      <Name>sqlPorcentajeIncByEnt</Name>
+      <Cache duration="300" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="entityId" name="entityId" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT
+    CASE
+        WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4464X' THEN 'Alburquerque'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4468X' THEN 'Puebla de Obando'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4358X' THEN 'Don Benito'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4340' THEN 'Novalvillar de Pela'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4244X' THEN 'Herrera del Duque'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4478X' THEN 'Badajoz'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4410X' THEN 'Mérida'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4486X' THEN 'Olivenza'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4436Y' THEN 'Almendralejo'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4325X' THEN 'Castuera'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4395X' THEN 'Villafranca de los Barros'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4260' THEN 'Peraleda del Zaucejo'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4489X' THEN 'Cheles'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4492F' THEN 'Embalse del Aguijón'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4427X' THEN 'Zafra'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4497X' THEN 'Villanueva del Fresno'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4511C' THEN 'Jerez de los Caballeros'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4520X' THEN 'Fregenal de la Sierra'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4501X' THEN 'Fuente de Cantos'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4386B' THEN 'Llerena'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_5473X' THEN 'Azuaga'
+		WHEN entityId = 'AEMET_OBSERVATION:AEMET_OBSERVATION_4499X' THEN 'Monesterio'
+		end as name,
+	categorical_predicted ,ROUND( ( (100 * count(*) ) / (SELECT COUNT(1) from EAQR_pmi_dwh_FirePrediction epdfp where entityId = ${entityId}  ) ) , 2 )  as avgTotal
+from EAQR_pmi_dwh_FirePrediction epdfp
+where entityId = ${entityId} 
+group by  categorical_predicted , name
+order by 2 desc;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="sqlPorcentajeResByEnt" id="sqlPorcentajeResByEnt"
+               type="sql">
+      <Name>sqlPorcentajeResByEnt</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="entityRespira" name="entityRespira" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT 
+    (
+        CASE
+            WHEN airQualityIndex_predicted < 25 then 'Excelente' 
+			WHEN airQualityIndex_predicted >= 25 and airQualityIndex_predicted < 50 then 'Bueno'
+			WHEN airQualityIndex_predicted >= 50 and airQualityIndex_predicted < 75 then 'Polución Ligera'
+			WHEN airQualityIndex_predicted >= 75 and airQualityIndex_predicted < 100 then 'Polución Moderada'
+			WHEN airQualityIndex_predicted > 100 then 'Polución Grave'
+		end
+	) as nominal_aqi,
+	ROUND( ( (100 * count(*) ) )) / 
+									(SELECT count(1) from EAQR__R_AQI_PREDICT erap where erap.entityId not LIKE '%RESPIRA_A4CF12756744'
+										and  erap.entityId not LIKE '%RESPIRA_A4CF1275554C'
+										and erap.entityId not LIKE 'RESPIRA:RESPIRA_A4CF1275143C'
+										and erap.entityId = ${entityRespira}) as avgTotal,
+	er.description 
+from EAQR__R_AQI_PREDICT erap
+left join (SELECT er.entityId ,description 
+					from EAQR__R er
+					group by er.entityId , description ) as er
+	    on er.entityId = erap.entityId
+where erap.entityId not LIKE '%RESPIRA_A4CF12756744'
+and  erap.entityId not LIKE '%RESPIRA_A4CF1275554C'
+and erap.entityId not LIKE 'RESPIRA:RESPIRA_A4CF1275143C'
+and erap.entityId = ${entityRespira}
+group by nominal_aqi, description 
+order by 2 desc;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" id="" type="xPath">
+      <Name/>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[/*/*[CUSTOMERS_CUSTOMERNUMBER=103]]]></Query>
+   </DataAccess>
+</CDADescriptor>

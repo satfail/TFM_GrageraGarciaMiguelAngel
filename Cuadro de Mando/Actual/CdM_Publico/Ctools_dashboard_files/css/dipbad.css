@@ -1,0 +1,1629 @@
+/* ====================================== */
+/* ========== Dipbad LIMS CSS ========== */
+/* ====================================== */
+
+
+/* ================ POPUP =============== */
+#popup1 {
+   visibility: hidden;
+   opacity: 0;
+   margin-top: 5px;
+}
+#popup1:target {
+   visibility:visible;
+   opacity: 1;
+   background-color: rgba(0,0,0,0.8);
+   position: fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   margin:0;
+   /*z-index: 999;*/
+   transition:all 1s;
+}
+.popup1-contenedor {
+   position: relative;
+   margin:7% auto;
+   padding:30px 50px;
+   background-color: #fafafa;
+   color:#333;
+   border-radius: 3px;
+   width:50%;
+}
+a.popup1-cerrar {
+   position: absolute;
+   top:3px;
+   right:3px;
+   background-color: #333;
+   padding:7px 10px;
+   font-size: 20px;
+   text-decoration: none;
+   line-height: 1;
+   color:#fff;
+}
+
+/* ================ FIN POPUPS =============== */
+
+/* ================ FONTS =============== */
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:  local('Open Sans'), 
+        local('OpenSans'),
+        /* CE */
+}
+
+.liquidFillGaugeText {
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.area {
+  fill: steelblue;
+  clip-path: url(#clip);
+}
+
+.zoom {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}
+
+#fig {
+  width: 860px;
+  height: 390px;
+}
+
+#enfoque_char {
+    overflow: hidden;
+}
+#enfoque_char2 {
+    overflow: hidden;
+}
+#enfoque_char3 {
+    overflow: hidden;
+}
+
+#ahorroemisiones_dialChart {
+    overflow: hidden;
+}
+
+/* ================ GENERAL STYLES ================ */
+
+html {
+    overflow-y: scroll;
+    height: 80%;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    background: #FFFFFF;
+    position: relative;
+    min-height: 80%;
+    color: #343E47;
+}
+
+.container {
+    width:  100%;        /*1310px;   100%; */
+	min-width:1230px;
+}
+
+
+/* ================ HEADER ================ */
+
+/* full width div to decorate header background */
+.headerBackground {
+    width: 76%;
+    height: 70px;
+    position: absolute;
+    left: 12%;
+    right: 12%;
+    top: 0;
+    z-index: 0;
+    background: url('../img/header-bg.png') repeat-x left top;  
+    margin: 0;
+}
+
+.headerRow {
+    height: 50px;
+}
+/*
+.headerRow .pentahoLogo a {
+    height: 90px;
+    margin-top: -10px;
+    width: 260px;
+    margin-left: 30px;
+    display: inline-block;
+      
+  
+}*/
+
+no-svg .headerRow .pentahoLogo a {
+   
+} 
+
+/*
+.headerRow .BadajozesmasLogo a {
+    height: 90px;
+    margin-top: -10px;
+    width: 260px;
+    margin-left: 30px;
+    display: inline-block;
+       
+}*/
+
+
+.welcomeMsg p {
+    margin: 10px 0;
+    padding: 70;
+    line-height: 100px;
+    font-size: 16px;
+    border-left: 300px solid #C6C6C6;
+    padding-left: 100px;
+}
+
+.welcomeMsg p .username {
+    color: #005CA7;
+}
+
+.tipsy { padding: 5px; font-size: 10px; position: absolute; z-index: 100000; }
+
+.tipsy-inner { padding: 5px 8px 4px 8px; background-color: red; color: white; max-width: 200px; text-align: center; }
+
+/* ================ FOOTER ================ */
+
+.footerBackground {
+    width: 76%;
+    height: 70px;
+    position: absolute;
+    left: 12%;
+    right: 12%;
+    z-index: 0;
+    background: url('../img/header-bg.png') repeat-x left top;
+    margin: 0;
+
+}
+/*
+.footerRow {
+    height: 70px;
+}*/
+
+/* .footerRow .fiwareLogo a {
+    height: 64px;
+    margin-top: 3px;
+    width: 139px;
+    display: inline-block;
+    background: url('../img/fiwarespace.png') repeat-x left center;    
+} 
+
+
+.footerRow .sectionLogo a {
+    height: 64px;
+    margin-top: 3px;
+    width: 213px;
+    display: inline-block;
+    background: url('../img/badajozesmas.png');    
+}*/
+
+ .footerRow .fiwareLogo a {
+    height: 90px;
+    margin-top: -10px;
+    width: 260px;
+    margin-left: 30px;
+    display: inline-block;
+    background: url('../img/logo_diputacion_small.png') repeat-x left center;    
+} 
+
+
+.footerRow .sectionLogo a {
+    height: 62px;
+    margin-top: 0px;
+    width: 62px;
+    margin-right: 30px;
+    display: inline-block;
+    background: url('../img/badajozesmas.png');    
+}
+
+.byeMsg p {
+    margin: 10px 0;
+    padding: 100;
+    line-height: 100px;
+    font-size: 16px;
+    border-left: 300px solid #C6C6C6;
+    padding-left: 100px;
+}
+
+.byeMsg p .username {
+    color: #005CA7;
+}
+
+
+
+/* ================ DASHBOARD ================ */
+
+/*.sunburstObj{
+    background: url('../img/logo_diputacion_small.png') no-repeat center center;
+} */
+
+
+/* dashboard title */
+.titleObj {
+    font-size: 16px;
+    margin-top: 10px;
+    padding-bottom: 7px;
+    line-height: 24px;
+    font-weight: 400;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+/* sections sub-titles */
+.subTitle {
+    padding: 8px 0;
+    color: #666666;
+    border-bottom: 1px solid #E6E6E6;
+    line-height: 18px;
+}
+
+/* kpi column */
+.panel-body {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.kpiContainer {
+    padding-bottom: 20px;
+}
+
+.kpiColumn {
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 2px;
+}
+
+.selectColumn {
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 5px;
+}
+
+.refColumn {
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+/*
+.dateObj {
+    margin-top: 20px;
+}
+
+.dateObj .chzn-container {
+    width: 100px !important;
+    font-size: 12px;
+    display: block;
+    float: right;
+}
+*/
+
+
+.selectColumn {
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 10px;
+}
+
+.refColumn {
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 10px;
+}
+
+.titlechart {
+    font-size: 16px;
+    color: white;
+    background: #c32921;
+    margin-top: 20px;
+}
+
+.selectObj3 {
+    position: absolute;
+    margin-top: 1px;
+    width: 100px !important;
+    z-index: 1;
+    
+}
+
+.selectObj3 .chzn-container {
+     position: absolute;
+    width: 100px !important;
+    font-size: 12px;
+    display: block;
+    z-index: 1;
+}
+.selectObj3 .element.style {
+     position: absolute;
+    width: 100px;
+    z-index:1;
+}
+
+
+.selectObj2 {
+    position: absolute;
+    margin-top: 1px;
+    width: 275px !important;
+    z-index: 1;
+    
+}
+
+.selectObj2 .chzn-container {
+     position: absolute;
+    width: 200px !important;
+    font-size: 12px;
+    display: block;
+    z-index: 1;
+}
+.selectObj2 .element.style {
+     position: absolute;
+    width: 275px;
+    z-index:1;
+}
+
+/* ===================================MultiSelect ================================== 
+span.multiselect-native-select {
+  position: relative;
+}
+span.multiselect-native-select select {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px -1px -1px -3px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  left: 50%;
+  top: 30px;
+}
+.multiselect-container {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.multiselect-container .input-group {
+  margin: 5px;
+}
+.multiselect-container .multiselect-reset .input-group {
+  width: 93%;
+}
+.multiselect-container > li {
+  padding: 0;
+}
+.multiselect-container > li > a.multiselect-all label {
+  font-weight: 700;
+}
+.multiselect-container > li.multiselect-group label {
+  margin: 0;
+  padding: 3px 20px;
+  height: 100%;
+  font-weight: 700;
+}
+.multiselect-container > li.multiselect-group-clickable label {
+  cursor: pointer;
+}
+.multiselect-container > li > a {
+  padding: 0;
+}
+.multiselect-container > li > a > label {
+  margin: 0;
+  height: 100%;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 3px 20px 3px 40px;
+}
+.multiselect-container > li > a > label.checkbox,
+.multiselect-container > li > a > label.radio {
+  margin: 0;
+}
+.multiselect-container > li > a > label > input[type="checkbox"] {
+  margin-bottom: 5px;
+}
+.btn-group > .btn-group:nth-child(2) > .multiselect.btn {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.form-inline .multiselect-container label.checkbox,
+.form-inline .multiselect-container label.radio {
+  padding: 3px 20px 3px 40px;
+}
+.form-inline .multiselect-container li a label.checkbox input[type="checkbox"],
+.form-inline .multiselect-container li a label.radio input[type="radio"] {
+  margin-left: -20px;
+  margin-right: 0;
+}
+
+/* ===================================MultiSelect Fin ================================== */
+
+.selectMenu {
+ 
+    position: relative;
+  /*  min-width: 215px;
+    width: 215px !important;*/
+    font-size: 7px;
+    display: block;
+}
+
+.selectMenu .chzn-container {
+
+    font-size: 9px;
+}
+
+
+/* ================ RADIO BUTTON OBJ =============== */
+.radioButtonObj {
+    padding: 10px 0;
+    border-top:10px;
+}
+
+.radioButtonObj button {
+    padding-left: 10px;
+    background: none;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+    color: #666666;
+    position: relative;
+}
+
+.radioButtonObj button:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #CCCCCC;
+    
+    -webkit-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      -msie-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+       -moz-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+         -o-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.radioButtonObj button:after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    margin-top: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #343E47;
+    
+    -webkit-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      -msie-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+       -moz-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+         -o-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+.opacity .radioButtonObj button:after {
+    opacity: 0;
+}
+.no-opacity .radioButtonObj button:after {
+    display: none; /* ie8 fix */
+}
+
+.radioButtonObj button.active {
+    cursor: default;
+}
+
+.radioButtonObj button.active:after {
+    /* ie8 fix */
+    content: ' ';
+}
+
+.radioButtonObj button:hover:before {
+    border: 1px solid #343E47;
+}
+
+.radioButtonObj button.active:hover:before {
+    border: 1px solid #CCCCCC;
+}
+
+.opacity .radioButtonObj button.active:after {
+    opacity: 1;
+}
+.no-opacity .radioButtonObj button.active:after {
+    display: block; /* ie8 fix */
+}
+
+/* ================ RADIO BUTTON OBJ2 =============== */
+.radioButtonObj2 {
+    padding: 5px 0;
+}
+
+.radioButtonObj2 button {
+    padding-left: 10px;
+    background: none;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+    color: #666666;
+    position: relative;
+}
+
+.radioButtonObj2 button:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #CCCCCC;
+    
+    -webkit-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      -msie-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+       -moz-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+         -o-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.radioButtonObj2 button:after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    margin-top: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #343E47;
+    
+    -webkit-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      -msie-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+       -moz-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+         -o-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+.opacity .radioButtonObj2 button:after {
+    opacity: 0;
+}
+.no-opacity .radioButtonObj2 button:after {
+    display: none; /* ie8 fix */
+}
+
+.radioButtonObj2 button.active {
+    cursor: default;
+}
+
+.radioButtonObj2 button.active:after {
+    /* ie8 fix */
+    content: ' ';
+}
+
+.radioButtonObj2 button:hover:before {
+    border: 1px solid #343E47;
+}
+
+.radioButtonObj2 button.active:hover:before {
+    border: 1px solid #CCCCCC;
+}
+
+.opacity .radioButtonObj2 button.active:after {
+    opacity: 1;
+}
+.no-opacity .radioButtonObj2 button.active:after {
+    display: block; /* ie8 fix */
+}
+
+/* ================ RADIO BUTTON OBJ3 =============== */
+.radioButtonObj3 {
+    padding: 5px 0;
+}
+
+.radioButtonObj3 button {
+    padding-left: 20px;
+    background: none;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+    color: #666666;
+    position: relative;
+}
+
+.radioButtonObj3 button:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #CCCCCC;
+    
+    -webkit-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      -msie-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+       -moz-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+         -o-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.radioButtonObj3 button:after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    margin-top: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #343E47;
+    
+    -webkit-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      -msie-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+       -moz-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+         -o-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+.opacity .radioButtonObj3 button:after {
+    opacity: 0;
+}
+.no-opacity .radioButtonObj3 button:after {
+    display: none; /* ie8 fix */
+}
+
+.radioButtonObj3 button.active {
+    cursor: default;
+}
+
+.radioButtonObj3 button.active:after {
+    /* ie8 fix */
+    content: ' ';
+}
+
+.radioButtonObj3 button:hover:before {
+    border: 1px solid #343E47;
+}
+
+.radioButtonObj3 button.active:hover:before {
+    border: 1px solid #CCCCCC;
+}
+
+.opacity .radioButtonObj3 button.active:after {
+    opacity: 1;
+}
+.no-opacity .radioButtonObj3 button.active:after {
+    display: block; /* ie8 fix */
+}
+
+
+/* ================ COLOR BUTTON OBJ =============== */
+.colorButtonObj {
+    padding: 7px 0;
+    width: 180px;
+}
+
+.colorButtonObj button {
+    border: none;
+    background: #c32921;
+    color: #f2f2f2;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 2px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    width: 170px;
+}
+
+.colorButtonObj button:hover {
+    background: rgba(0,0,0,0);
+    color: #2c6fdb;
+    box-shadow: inset 0 0 0 3px #2c6fdb;
+}
+
+.colorButtonObj button:active {
+    background: rgba(0,0,0,0);
+    color: #2c6fdb;
+
+}
+
+.colorButtonObj button:focus {
+    background: rgba(0,0,0,0);
+    color: #2c6fdb;
+    box-shadow: inset 0 0 0 3px #2c6fdb;
+    cursor: default;
+}
+
+.colorButtonObj button:after {
+    background: rgba(0,0,0,0);
+    color: #2c6fdb;
+    box-shadow: inset 0 0 0 3px #2c6fdb;
+}
+
+.colorButtonObj button:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    width: 12px;
+    height: 12px;
+}
+
+
+
+.colorButtonObj button.active:after {
+    /* ie8 fix */
+    content: ' ';
+    background: rgba(0,0,0,0);
+    color: #2c6fdb;
+    box-shadow: inset 0 0 0 3px #2c6fdb;
+}
+
+
+
+
+/* ================ OTHERS =============== */
+
+
+.kpiValueObj {
+    font-size: 20px;
+   /* height: 20px;*/
+    color: #c32921; /* #1E88E5; */
+    padding: 10px 0;
+    /*margin: 10px 0;
+  /*  top: 50%;
+    padding-top:20px;*/
+}
+
+.executiveValueObj {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: inherit;
+    line-height: 1.1;
+    text-align:center;
+    position: relative;
+    padding: 10px 0px;
+}
+
+.executiveValueDObj {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: inherit;
+    line-height: 1.1;
+    text-align:center;
+    position: relative;
+    padding: 10px 0px;
+}
+.executiveValueRedObj {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: inherit;
+    color: #c32921;
+    line-height: 1.1;
+    text-align:center;
+    position: relative;
+    padding: 10px 0px;
+}
+.executiveSubValueDObj {
+    font-size: 16px;
+    font-weight: bold; 
+    color: black;
+    font-family: inherit;
+    line-height: 1.1;
+    text-align:justify;
+    position: relative;
+    padding: 1px 0px;
+}
+
+.executiveSubValueTabuladoDObj {
+    padding-left: 50px;
+    font-size: 16px;
+    font-weight: bold; 
+    color: black;
+    font-family: inherit;
+    line-height: 1.1;
+    text-align:justify;
+    position: relative;
+    padding: 1px 0px;
+}
+
+
+.executiveSubValueObj {
+    font-size: 16px;
+    font-weight: bold; 
+    color: #c32921;
+    font-family: inherit;
+    line-height: 1.1;
+    text-align:justify;
+    position: relative;
+    padding: 1px 0px;
+}
+
+.kpiChart {
+    margin-top: 10px;
+}
+
+.centerRow {
+    display: none;
+    margin: 30px 0;
+}
+
+.centerRow2 {
+    display: none;
+    margin: 20px 0;
+}
+
+.centerRow3 {
+    display: none;
+    margin: 5px 0;
+}
+
+/* ================ LEGEND ================ */
+
+.legendObj table.dataTable thead {
+    display: none;
+}
+
+.legendObj table.dataTable {
+    border: none;    
+    margin-top: 6px;
+}
+
+.legendObj table.dataTable > tbody > tr > td {
+    border: none;
+    background: none;
+    text-align: right;
+    font-size: 12px;
+    padding: 6px 32px 6px 0;
+    height: 32px;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+}
+
+.legendObj table.dataTable > tbody > tr > td:after {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+    background: url('../img/check.svg') no-repeat center center;
+}
+
+.no-svg .legendObj table.dataTable > tbody > tr > td:after {
+    background: url('../img/check.png') no-repeat center center; /* ie8 fix - use png instead of svg */
+}
+
+.legendObj table.dataTable > tbody > tr.disabled > td:after {
+    content: ' '; /* ie8 fix */
+    background: none;
+}
+
+/* Use classes created on legendTable's "Draw Function" to style checkboxes' background color */
+.legendObj table.dataTable > tbody > tr.row0 > td:after {
+    background-color: #005CA7;
+}
+.legendObj table.dataTable > tbody > tr.row1 > td:after {
+    background-color: #005CA7;
+}
+.legendObj table.dataTable > tbody > tr.row2 > td:after {
+    background-color: #005CA7;
+}
+.legendObj table.dataTable > tbody > tr.row3 > td:after {
+    background-color: #005CA7;
+}
+.legendObj table.dataTable > tbody > tr.row4 > td:after {
+    background-color: #005CA7;
+}
+.legendObj table.dataTable > tbody > tr.row5 > td:after {
+    background-color: #005CA7;
+}
+.legendObj table.dataTable > tbody > tr.row6 > td:after {
+    background-color: #005CA7;
+}
+.legendObj table.dataTable > tbody > tr.row7 > td:after {
+    background-color: #005CA7;
+}
+.legendObj table.dataTable > tbody > tr.row8 > td:after {
+    background-color: #005CA7;
+}
+.legendObj table.dataTable > tbody > tr.row9 > td:after {
+    background-color: #005CA7;
+}
+.legendObj table.dataTable > tbody > tr.row10 > td:after {
+    background-color: #005CA7;
+}
+
+/* ================ DATE RANGE ================ */
+
+.dateObj {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dateObj .chzn-container {
+    width: 100px !important;
+    font-size: 12px;
+    display: block;
+    float: right;
+}
+
+.dateObj .chzn-container-single .chzn-single {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding-left: 36px;
+    background: none;
+    filter: none;
+    color: #666;
+    border-radius: 0;
+    
+    -webkit-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      -msie-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+       -moz-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+         -o-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.dateObj .chzn-container-single .chzn-single:before {
+    width: 23px;
+    height: 20px;
+    left: 3px;
+    top: 50%;
+    margin-top: -11px;
+    position: absolute;
+    content: '';
+    background: url('../img/calendar.svg') no-repeat center center;
+    z-index: 1;
+    
+    -webkit-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      -msie-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+       -moz-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+         -o-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+.no-svg .dateObj .chzn-container-single .chzn-single:before {
+    background: url('../img/calendar.png') no-repeat center center; /* ie8 fix - use png instead of svg */
+}
+
+.dateObj .chzn-container-single .chzn-single:hover:before,
+.dateObj .chzn-container-single .chzn-single-with-drop:before {
+    content: ' ';
+}
+
+.opacity .dateObj .chzn-container-single .chzn-single:hover:before,
+.opacity .dateObj .chzn-container-single .chzn-single-with-drop:before {
+    opacity: 0;
+}
+
+.dateObj .chzn-container-single .chzn-single:after {
+    width: 23px;
+    height: 20px;
+    left: 3px;
+    top: 50%;
+    margin-top: -11px;
+    position: absolute;
+    content: '';
+    background: url('../img/calendar-hover.svg') no-repeat center center;
+    z-index: 2;
+    
+    -webkit-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      -msie-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+       -moz-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+         -o-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+.opacity .dateObj .chzn-container-single .chzn-single:after {
+    opacity: 0;
+}
+.no-svg .dateObj .chzn-container-single .chzn-single:after {
+    background: url('../img/calendar-hover.png') no-repeat center center; /* ie8 fix - use png instead of svg */
+}
+.no-opacity .dateObj .chzn-container-single .chzn-single:after {
+    display: none; /* ie8 fix */
+}
+
+.no-opacity .dateObj .chzn-container-single .chzn-single:hover:after,
+.no-opacity .dateObj .chzn-container-single .chzn-single-with-drop:after {
+    display: block; /* ie8 fix */
+}
+
+.opacity .dateObj .chzn-container-single .chzn-single:hover:after,
+.opacity .dateObj .chzn-container-single .chzn-single-with-drop:after {
+    opacity: 1;
+}
+
+.dateObj .chzn-container-single .chzn-single:hover,
+.dateObj .chzn-container-single .chzn-single.chzn-single-with-drop {
+    background: #005CA7;
+    color: #FFF;
+}
+
+.dateObj .chzn-container-single .chzn-single span {
+    color: #666;
+    margin-right: 10px;
+    
+    -webkit-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      -msie-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+       -moz-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+         -o-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.dateObj .chzn-container-single .chzn-single:hover span,
+.dateObj .chzn-container-single .chzn-single-with-drop span {
+    color: #FFF;
+}
+
+.dateObj .chzn-container-single .chzn-single:focus {
+    outline: 0;
+}
+
+.dateObj .chzn-container-single .chzn-drop {
+    width: 100% !important;
+    background: #FFF;
+    border: 1px solid #D1D7DA;
+    padding: 15px;
+    text-align: left;
+    border-radius: 0;
+    margin-top: 1px;
+}
+
+.dateObj .chzn-container .chzn-results {
+    padding: 0;
+    margin: 0;
+}
+
+.dateObj .chzn-container .chzn-results .highlighted {
+    background: #005CA7;
+}
+
+.dateObj .chzn-container-single .chzn-single div {
+    background: none;
+    border: none;
+    display: none;
+}
+
+.dateObj .chzn-container-single .chzn-search {
+    display: none;
+}
+
+/* ================ RED RANGE ================ */
+
+.redObj {
+    margin-top: 20px;
+}
+
+.redObj .chzn-container {
+    width: 200px !important;
+    font-size: 12px;
+    display: block;
+    float: right;
+}
+
+.redObj .chzn-container-single .chzn-single {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding-left: 36px;
+    background: none;
+    filter: none;
+    color: #666;
+    border-radius: 0;
+    
+    -webkit-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      -msie-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+       -moz-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+         -o-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.redObj .chzn-container-single .chzn-single:before {
+    width: 23px;
+    height: 20px;
+    left: 3px;
+    top: 50%;
+    margin-top: -11px;
+    position: absolute;
+    content: '';
+    background: url('../img/localizacion.svg') no-repeat center center;
+    z-index: 1;
+    
+    -webkit-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      -msie-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+       -moz-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+         -o-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+.no-svg .redObj .chzn-container-single .chzn-single:before {
+    background: url('../img/localizacion.png') no-repeat center center; /* ie8 fix - use png instead of svg */
+}
+
+.redObj .chzn-container-single .chzn-single:hover:before,
+.redObj .chzn-container-single .chzn-single-with-drop:before {
+    content: ' ';
+}
+
+.opacity .redObj .chzn-container-single .chzn-single:hover:before,
+.opacity .redObj .chzn-container-single .chzn-single-with-drop:before {
+    opacity: 0;
+}
+
+.redObj .chzn-container-single .chzn-single:after {
+    width: 23px;
+    height: 20px;
+    left: 3px;
+    top: 50%;
+    margin-top: -11px;
+    position: absolute;
+    content: '';
+    background: url('../img/localizacion-hover.svg') no-repeat center center;
+    z-index: 2;
+    
+    -webkit-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      -msie-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+       -moz-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+         -o-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+.opacity .redObj .chzn-container-single .chzn-single:after {
+    opacity: 0;
+}
+.no-svg .redObj .chzn-container-single .chzn-single:after {
+    background: url('../img/localizacion-hover.png') no-repeat center center; /* ie8 fix - use png instead of svg */
+}
+.no-opacity .redObj .chzn-container-single .chzn-single:after {
+    display: none; /* ie8 fix */
+}
+
+.no-opacity .redObj .chzn-container-single .chzn-single:hover:after,
+.no-opacity .redObj .chzn-container-single .chzn-single-with-drop:after {
+    display: block; /* ie8 fix */
+}
+
+.opacity .redObj .chzn-container-single .chzn-single:hover:after,
+.opacity .redObj .chzn-container-single .chzn-single-with-drop:after {
+    opacity: 1;
+}
+
+.redObj .chzn-container-single .chzn-single:hover,
+.redObj .chzn-container-single .chzn-single.chzn-single-with-drop {
+    background: #005CA7;
+    color: #FFF;
+}
+
+.redObj .chzn-container-single .chzn-single span {
+    color: #666;
+    margin-right: 10px;
+    
+    -webkit-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      -msie-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+       -moz-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+         -o-transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            transition: all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.redObj .chzn-container-single .chzn-single:hover span,
+.redObj .chzn-container-single .chzn-single-with-drop span {
+    color: #FFF;
+}
+
+.redObj .chzn-container-single .chzn-single:focus {
+    outline: 0;
+}
+
+.redObj .chzn-container-single .chzn-drop {
+    width: 100% !important;
+    background: #FFF;
+    border: 1px solid #D1D7DA;
+    padding: 15px;
+    text-align: left;
+    border-radius: 0;
+    margin-top: 1px;
+}
+
+.redObj .chzn-container .chzn-results {
+    padding: 0;
+    margin: 0;
+}
+
+.redObj .chzn-container .chzn-results .highlighted {
+    background: #005CA7;
+}
+
+.redObj .chzn-container-single .chzn-single div {
+    background: none;
+    border: none;
+    display: none;
+}
+
+.redObj .chzn-container-single .chzn-search {
+    display: none;
+}
+
+/* ================ DATE SELECTOR ================ */
+
+.dateSelectorObj {
+    margin-top: 20px;
+    
+    width: 200px !important;
+    font-size: 12px;
+ /*   display: block; */
+    float: right;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background: url('../img/check.svg') no-repeat center center;
+}
+
+
+.legendObj table.dataTable > tbody > tr > td:after {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+    background: url('../img/check.svg') no-repeat center center;
+}
+
+
+
+/* ================ CHART TOOLTIP ================ */
+
+.tipsy-inner {
+    background: #FFFFFF;
+    font-family: 'Open Sans', Arial, sans-serif;
+    border: 1px solid #E6E6E6;
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+      -msie-box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+       -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+         -o-box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+            box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+    padding: 0px 0px 0px;
+    color: #4D4D4D;
+}
+
+.tooltipContainer .tooltipTitle {
+    color: #666666;
+/*    display: block; */
+    text-align: center;
+    font-size: 8px;
+    line-height: 1;
+    margin-bottom: 3px;
+    line-height: 20px;
+}
+
+.tooltipContainer .tooltipSubtitle {
+    color: #666666;
+    /* display: block; */
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.tooltipContainer .tooltipValue {
+ /*   display: block; */
+    text-align: center;
+    font-weight: 500;
+    line-height: 1;    
+    font-size: 24px;
+    color: #343E47;
+}
+
+.tooltipContainer .tooltipValue.classic {
+    color: #005CA7;
+}
+.tooltipContainer .tooltipValue.vintage {
+    color: #3E83B7;
+}
+.tooltipContainer .tooltipValue.motorcycles {
+    color: #5C9FBC;
+}
+.tooltipContainer .tooltipValue.trucks {
+    color: #66C2A5;
+}
+.tooltipContainer .tooltipValue.trains {
+    color: #22B573;
+}
+
+/* ================ MULTI SELECTOR ================ */
+
+/****************** Header and Header border *************/
+.WDheader {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+/****************** Other headers *************/
+
+.WDh1 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 0px;
+
+}
+
+
+.WDh2 {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+
+/******************* Filter Cells *****************/
+
+/* Filter Cells */
+.WDfilterCell {
+}
+.WDfilterCell .title_container{
+}
+.WDfilterCell .content-container{
+}
+
+
+
+/****************** Data Cells **********************/
+
+/* Data Cells */
+div.container .WDdataCell {
+
+    overflow:hidden;
+    margin-top:10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;  
+    border-radius: 6px;
+
+    background-color: #f1f1f1;
+
+    border-style:solid;
+    border-width:2px;
+    border-color:#d0cfcf;
+
+    -webkit-box-shadow: 2px 2px 2px 0px #82858A;
+    -moz-box-shadow: 2px 2px 2px 0px #82858A;
+    -o-box-shadow: 2px 2px 2px 0px #82858A;
+    box-shadow: 2px 2px 2px 0px #82858A;
+
+    margin-left:-2px;
+    margin-right:-2px;
+}  
+
+
+.dataTables_wrapper{
+    min-height:inherit;
+}
+
+
+/* Data Cells title container*/
+div.container .WDdataCellHeader {
+
+    /*    overflow:hidden;*/
+    margin-top:1px;
+    margin-bottom:10px;
+    min-height: 32px;
+    padding-top:2px;
+    margin-left:  -2px;
+    margin-right: -2px;
+    padding-bottom: 10px;
+
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    -o-border-radius: 3px 3px 0px 0px;  
+    border-radius: 3px 3px 0px 0px;
+
+    font-size:18px;
+    font-weight: bold;
+    color:#ffffff;
+
+    text-indent: 30px;
+
+    /*    margin-left:-2px;*/
+    /*    margin-right:-2px;*/
+
+    background: #005ca4; /* Old browsers */
+
+    -webkit-box-shadow: 0px 0px 2px 0px #82858A;
+    -moz-box-shadow: 0px 0px 2px 0px #82858A;
+    -o-box-shadow: 0px 0px 2px 0px #82858A;
+    box-shadow: 0px 0px 2px 0px #82858A;
+
+
+
+}
+
+/* Data Cells content container */
+div.container .WDdataCellBody0  {
+
+    padding-top: 5px;
+    padding-bottom: 20px;
+    background-color: #f1f1f1;
+    min-width: 180px;
+    -webkit-border-radius: 0px 0px 3px 3px;
+    -moz-border-radius: 0px 0px 3px 3px;
+    -o-border-radius: 0px 0px 3px 3px;  
+    border-radius: 0px 0px 3px 3px;
+
+    -webkit-box-shadow: 0px 0px 2px 0px #82858A;
+    -moz-box-shadow: 0px 0px 2px 0px #82858A;
+    -o-box-shadow: 0px 0px 2px 0px #82858A;
+    box-shadow: 0px 0px 2px 0px #82858A;
+
+    margin-left:  -1px;
+    margin-right: -1px;
+}
+
+
+div.container .WDdataCellBody  {
+
+    padding-top: 5px;
+    padding-bottom: 20px;
+    background-color: #f1f1f1;
+    min-width: 980px;
+    -webkit-border-radius: 0px 0px 3px 3px;
+    -moz-border-radius: 0px 0px 3px 3px;
+    -o-border-radius: 0px 0px 3px 3px;  
+    border-radius: 0px 0px 3px 3px;
+
+    -webkit-box-shadow: 0px 0px 2px 0px #82858A;
+    -moz-box-shadow: 0px 0px 2px 0px #82858A;
+    -o-box-shadow: 0px 0px 2px 0px #82858A;
+    box-shadow: 0px 0px 2px 0px #82858A;
+
+    margin-left:  -1px;
+    margin-right: -1px;
+}
+
+
+/************ Tables **************/
+
+/* Generic */
+/* Data Cell Tables*/
+div.container table {}
+
+
+div.container   thead {}
+div.container  thead tr {
+    height:28px;
+}
+div.container  thead th {
+    font-size:11px;
+    font-weight:500;
+    color:#36383D;
+    border-left: solid #C1C9D3 1px;
+    background-color:#DAE0EA;
+    cursor:pointer;
+}
+div.container  thead th.sorting{
+    background:#DAE0EA;
+}
+div.container  thead th.sorting_asc{
+    background: #b0c2d4;
+    color:#ffffff;
+}
+div.container  thead th.sorting_desc{
+    background: #8FA9C2;
+    color:#FFFFFF;
+}
+div.container   thead th:first-child {
+    border-left:none;
+}
+
+/* DataTables */
+div.container .dataTables_wrapper{
+    min-height:0px;  
+}
+
+/* DataTables Sorting and Alternate Rows*/
+/*div.container .dataTables_wrapper tbody td.sorting_1{
+  background:none
+}*/
+/* TODO: Temporary sort indicator*/
+div.container  .dataTables_wrapper tbody tr.odd td.sorting_1,
+div.container  .dataTables_wrapper tbody tr.odd{
+    background:#FFFFFF;
+}
+div.container  .dataTables_wrapper tbody tr.even td.sorting_1,
+div.container  .dataTables_wrapper tbody tr.even{
+    background:#F5F8FD; 
+}
+
+
+
+/************ Selectors *************/
+
+select {
+    width: 250px;
+     z-index: 5;
+}
+
+select[multiple] {
+    width: 175px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid;
+    z-index: 5;
+}
+
+
+
+
+
+
+/***************** Others ***************/
+
+
+blockquote {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding-left: 5px;
+    border-left: 3px solid #ccc;
+    font-family: 'Courier New',Courier,monospace;
+} 
+
+.dualColumn{
+    -moz-column-count: 2;
+    -moz-column-gap: 40px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 40px;
+    column-count: 2;
+    column-gap: 40px;
+}
+
+texto{
+    z-index: 0;
+    background: #c32921;
+}
+
+#popupObj {
+ position:absolute;
+ background: #9c9c9b;
+ z-Index:1000;
+ padding:5px;
+ border-radius:5px;
+ border: 1px solid grey;
+ display: none;
+}
